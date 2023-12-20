@@ -1,0 +1,36 @@
+1. Use to clone the 'Development' branch
+    
+    command => git clone -b Development https://github.com/Omecx/PS-Construction.git
+
+2. After cloning work on it and after completing generate a pull request
+
+3. Wait for sometime and then after review --- repeat the same steps while also update your local_repo by pulling from the main Repo's 'Development' branch
+
+                                    Or 
+
+1. fork the Branch as your Repo  *Imp unselect the option "Only main branch"
+
+2. Work on it and after completing follow below steps to push it to Your forked Repo Create a Pull request "Select 'Development' branch and then only create pull request"
+
+    a. Simultaneously add an upstream to sync files and progress
+                
+        command => git remote add upstream https://github.com/Omecx/PS-Construction.git
+
+    b. now we have added upstream: 
+        1. git fetch upstream
+        2. you will get upstream/main and upstream/Development
+        3. merge it with the working branch(the one which you are working on)
+
+                command => git merge upstream/Development working-branch 
+                                OR simply
+                command => git merge upstream/Development
+
+        4. after pulling the changes and merging them push the changes to your forked Repo
+            
+    c. for merging the code with the OG 'Development' branch create a pull request 
+        1. verify the code {no errors should be present/ No conflicts}
+        2. When creating Pull request please pay attention to the merge conflict {github checks and alerts if any present}
+        3. rectify if or Contact and send the pull request 
+        4. if any corrections specifies please resolve and send the pull request again
+    
+    d. After the request is approved move on to next order of business.
